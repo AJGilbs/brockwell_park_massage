@@ -35,3 +35,31 @@
     color: rgba(0, 255, 87, 0.73);
   }
 }
+
+.image-size {
+  width: 300px;
+  height: 400px;
+  flex-grow: 1;
+  margin-left: 139px;
+  margin-right: 112px;
+  margin-top: 37px;
+}
+
+.text {
+  padding: 50px 0px 50px 50px;
+  font-weight: lighter;
+}
+
+.home-content {
+  display: flex;
+}
+
+.header-content h2 {
+   margin-left: 18px;
+   color: green;
+}
+
+.header-content p {
+  font-weight: lighter;
+  text-align: center;
+}

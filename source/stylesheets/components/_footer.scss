@@ -1,0 +1,30 @@
+.footer {
+  border-top: 7px solid #0080007a;
+}
+
+.footer-copyright {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  font-weight: lighter;
+  color: #0080007a;
+  a {
+    color: #0080007a;
+    &:hover {
+      color: green;
+      text-decoration: none;
+    }
+  }
+
+}
+
+.footer-links {
+  margin-left: 5px;
+}
