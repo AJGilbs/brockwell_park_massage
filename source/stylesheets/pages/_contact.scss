@@ -1,8 +1,36 @@
 .contact-content {
   display: flex;
   justify-content: space-around;
+  h1 {
+    color: #79ab74;
+    margin-bottom: 40px;
+  }
+  p {
+    font-weight: lighter;
+    margin-bottom: 25px;
+  }
+  a {
+    font-weight: lighter;
+    color: #6e8f7b;
+    &:hover {
+      text-decoration: none;
+      color: #80C690;
+    }
+  }
 }
 
 .contact-items {
   padding: 90px;
+  text-align: center;
+  background-color: white;
+  h4 {
+    color: #79ab74;
+  }
+  i {
+    color: #333;
+  }
+}
+
+.mail {
+  margin-bottom: 25px;
 }
