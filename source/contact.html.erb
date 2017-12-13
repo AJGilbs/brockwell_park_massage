@@ -1,18 +1,27 @@
 <div class="contact-content">
-  <div class="contact-header">
-    <h1>Contact us</h1>
-  </div>
   <div class="contact-items">
+    <h1>Contact us</h1>
     <div class="phone">
       <i class="fa fa-phone"></i> Please call on 07976 980025
     </div>
     <div class="mail">
       <i class="fa fa-envelope-o"></i> <a href="mailto:melanie@brockwellparkmassage.co.uk">brockwellparkmassage@live.co.uk</a>
     </div>
-    <div class="map">
-      <img src="http://maps.google.com/maps/api/staticmap?markers=color:blue|label:A|37.9833 ,23.7333&center=37.9833,23.7333&zoom=8&size=300x200&sensor=false&maptype=hybrid" alt="" />
-    </div>
   </div>
+  <div id="map" style="width:400px;height:400px;background:yellow"></div>
 </div>
 
-
+<script>
+  function initMap() {
+        var uluru = {lat: 51.445612, lng: -0.104882};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdRnY3vkpxL1wCL33_0JxIYA9-zyFBhk4&callback=initMap"></script>
