@@ -26,6 +26,7 @@
     width: 100%;
   }
   position: relative;
+  height: 351px;
   margin-bottom: 20px;
   padding-bottom: 30px;
   background: #fefff9;
@@ -39,12 +40,17 @@
     &:nth-child(even) {
       margin-right: 0;
     }
+    &:hover {
+      text-decoration: none;
+      color: #363636;
+    }
   }
   span {
     display: block;
   }
   .card-summary {
     padding: 5% 5% 3% 5%;
+    font-size: 14px;
   }
   .card-header {
     position: relative;

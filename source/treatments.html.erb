@@ -1,45 +1,51 @@
-<!--
-<div class="container treatments">
-  <div class="row">
-    <% data.treatments.each do |treatment| %>
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
-          <div class="card-category">Popular</div>
-            <div class="card-description">
-              <h2><%= treatment.name %></h2>
-              <p><%= treatment.price %></p>
-            </div>
-            <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div> -->
+<div class="treatment-content">
+  <div class="treament-text">
+    <h1>Your treatment</h1>
+      <p>Your first session will start with a short consultation about your health, lifestyle and general wellbeing. Then, while you relax on the couch in the beautiful practice room, there will be opportunity to talk and ask questions. During your treatment, you will be carefully assessed and monitored to ensure that you receive maximum benefits.</p>
 
-     <div class="container">
-      <% data.treatments.each do |treatment| %>
-       <div class="col-xs-12 col-sm-4">
-         <div class="cards">
-          <a class="card-new" href="#">
-            <span class="card-header" style="background-image: url(http://placeimg.com/400/200/animals);">
-              <span class="card-title">
-                <h3><%= treatment.name %></h3>
-              </span>
-            </span>
-            <span class="card-summary">
-              A summary will also be present. Usually two to three brief sentences about the content on the detail page.
-            </span>
-            <span class="card-meta">
-              £<%= treatment.price %>
-            </span>
-            <span class="card-duration">
-              <%= treatment.duration %>min
-            </span>
-          </a>
-         </div>
-       </div>
-       <% end %>
+    <p>Afterwards, you will be offered a reviving tea infusion. You will also be able to discuss how to prolong and support the beneficial effects of your treatment.</p>
+    <h4>At home?</h4>
+    <p>At home
+    Our therapist specialises in bringing her restorative treatments to your home. A massage in the comfort and privacy of your own surroundings is the perfect way to treat your partner or a friend, celebrate a special occasion together or to unwind after a busy week.
+    </p>
+
+    <p>At-home treatments are available in these postcodes: SE1, SE3, SE11, SE14, SE15, SE19, SE21, SE22, SE24, SE26, SW2, SW9, SW11, SW16 and SW17.</p>
+
+    <p>At home call-out charges start at £10</p>
+  </div>
+  <div class="image-treatment">
+     <%= image_tag 'calm.jpg', class: 'image-size' %>
+  </div>
+</div>
+<div class="treatment-header">
+  <h2>Treatments</h2>
+</div>
+
+ <div class="container">
+  <% data.treatments.each do |treatment| %>
+   <div class="col-xs-12 col-sm-4">
+     <div class="cards">
+      <a class="card-new" href="#">
+        <span class="card-header" style="background-image: url(http://www.brockwellparkmassage.co.uk/assets/images/hpbackmassage2.jpg);">
+          <span class="card-title">
+            <h3><%= treatment.name %></h3>
+          </span>
+        </span>
+        <span class="card-summary">
+         <!--  A summary will also be present. Usually two to three brief sentences about the content on the detail page. -->
+         <%= treatment.description %>
+        </span>
+        <span class="card-meta">
+          £<%= treatment.price %>
+        </span>
+        <span class="card-duration">
+          <%= treatment.duration %>min
+        </span>
+      </a>
      </div>
+   </div>
+   <% end %>
+ </div>
 
 
 
