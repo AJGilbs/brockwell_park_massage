@@ -1,4 +1,4 @@
-
+<!--
 <div class="container treatments">
   <div class="row">
     <% data.treatments.each do |treatment| %>
@@ -14,8 +14,32 @@
       </div>
     <% end %>
   </div>
-</div>
+</div> -->
 
+     <div class="container">
+      <% data.treatments.each do |treatment| %>
+       <div class="col-xs-12 col-sm-4">
+         <div class="cards">
+          <a class="card-new" href="#">
+            <span class="card-header" style="background-image: url(http://placeimg.com/400/200/animals);">
+              <span class="card-title">
+                <h3><%= treatment.name %></h3>
+              </span>
+            </span>
+            <span class="card-summary">
+              A summary will also be present. Usually two to three brief sentences about the content on the detail page.
+            </span>
+            <span class="card-meta">
+              £<%= treatment.price %>
+            </span>
+            <span class="card-duration">
+              <%= treatment.duration %>min
+            </span>
+          </a>
+         </div>
+       </div>
+       <% end %>
+     </div>
 
 
 
