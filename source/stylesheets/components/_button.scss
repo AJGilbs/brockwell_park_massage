@@ -1,0 +1,12 @@
+.btn-book {
+  border: 1px solid #8dbb88;
+  border-radius: 30px;
+  font-weight: lighter;
+  width: 250px;
+  color: #8dbb88;
+  &:hover {
+    color: white !important;
+    text-decoration: none;
+    background: #8dbb88;
+  }
+}
